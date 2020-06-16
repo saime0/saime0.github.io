@@ -1,6 +1,6 @@
 nav{
  font-family: 'Press Start 2P', cursive;
-background-color: lightslategrey;
+background-color: grey;
 }
 
 
@@ -9,7 +9,7 @@ background-color: lightslategrey;
     background-color: white;}
 .container{
 background-color: lightblue;
-box-shadow: 0 0 30 rgb(129, 87, 226);
+box-shadow: 0 0 30 grey(129, 87, 226);
  border-radius: 20px;
  padding-top: 3rem;
  padding-left: 1rem;

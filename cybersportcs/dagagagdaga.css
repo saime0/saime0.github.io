@@ -1,0 +1,21 @@
+nav{
+ font-family: 'Press Start 2P', cursive;}
+
+
+
+
+ .jumbotron{
+    font-family: 'Philosopher', sans-serif;
+    background-color: white;}
+.container{
+background-color: lightblue;
+box-shadow: 0 0 30 rgb(129, 87, 226);
+ border-radius: 20px;
+ padding-top: 3rem;
+ padding-left: 1rem;
+
+}
+h1{
+    font-family: 'Press Start 2P', cursive;
+  
+}

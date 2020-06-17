@@ -1,3 +1,7 @@
+body{
+background-color: lime;
+
+}
 nav{
  font-family: 'Press Start 2P', cursive;
 background-color: grey;
@@ -16,5 +20,10 @@ box-shadow: 0 0 30 grey(129, 87, 226);
 
 }
 h1{
+    font-family: 'Press Start 2P', cursive;}
+  
+h2{
     font-family: 'Press Start 2P', cursive;
   
+
+}

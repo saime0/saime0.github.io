@@ -211,30 +211,35 @@ let divClose = document.querySelector('.close');
 let shadow = document.createElement('div');
 shadow.id = 'shadow';
 
+
 function open(){
     document.body.appendChild(shadow);
     formRegister.style.opacity = 1;
-    formRegister.style.display = 'block';
-    console.log('open');
-
 }
 function close(){
     shadow.parentNode.removeChild(shadow);
     formRegister.style.opacity = 0;
-    formRegister.style.display = 'none';
-    console.log('close');
 }
 button.onclick = open;
 divClose.onclick = close;
 shadow.onclick = close;
 
+let darkLayer = document.createElement('div');
+darkLayer.id = 'shadow';
 
-window.onload = function () {
-    let preloader = document.querySelector('.my-preloder');
-    setTimeout(() => {
-        preloader.style.display = 'none';
-    }, 1000);
+function show() {
+     register.style.display = 'block'
+    document.body.append(darkLayer);
+    formRegister.style.opacity = 1;
 }
+function close() {
+     register.style.display = 'none';
+    darkLayer.parentNode.removeChild(darkLayer);
+    formRegister.style.opacity = 0;
+}
+button.onclick = show;
+divClose.onclick = close;
+darkLayer.onclick = close;
 
 
 

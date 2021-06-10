@@ -3,56 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-
+   
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/24e14e3299.js" crossorigin="anonymous"></script>
     <title>MegaPC</title>
     <style>
-        .slider {
-            border: 5px solid black;
-            margin: 10px auto;
-            max-width: 100%;
-            position: relative;
-            overflow: hidden;
-        }
+        .slider{
+    border: 5px solid black;
+    margin: 10px auto;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slider-line{
+    display: flex;
+    transition: all ease 2s ;
+}
 
-        .slider-line {
-            display: flex;
-            transition: all ease 2s;
-        }
-
-        .btn-next {
-            right: 20px;
-        }
-
-        nav {
-            background-color: black;
-        }
-
-        body {
-            background-color: black;
-        }
-
+.btn-next{
+    right: 20px;
+}
+    nav{
+    background-color: black;
+    }
+    body{
+        background-color: black;
+    }
         h1 {
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
-            color: red;
+color: red;
         }
-        h3{
-            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: white;
-        }
+
         .search {
             text-align: center;
             margin: 50px 0;
             padding: 30px;
-
+            
             border-radius: 20px;
-
+            
         }
-
+        
         .search>input {
             width: 90%;
             height: 50px;
@@ -60,7 +53,7 @@
             outline: 0;
             border: 2px solid bisque;
             padding: 20px;
-
+            
         }
 
         .search>input:focus {
@@ -88,7 +81,7 @@
             height: 200px;
             width: 200px;
             overflow: hidden;
-
+            
         }
 
         .poster>img {
@@ -155,7 +148,7 @@
 
         .my-modal-footer {
             padding: 2px 16px;
-            background-color: lightgray;
+            background-color:lightgray ;
             color: white;
         }
 
@@ -187,29 +180,24 @@
         }
 
         .my-preloder {
-            position: fixed;
-            top: 0;
-            left: 0;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            position: relative;
             width: 100%;
             height: 100vh;
             z-index: 1000;
             background-color: rgb(210, 218, 255);
         }
-
-        .chekbox-div {
+        .chekbox-div{
             position: relative;
             background-color: rgb(177, 179, 252);
         }
-
-        h2 {
+        h2{
             color: white;
             font-family: 'Courier New', Courier, monospace;
         }
-
         #shadow {
             position: fixed;
             left: 0;
@@ -220,45 +208,39 @@
             background: #000;
             opacity: .5;
         }
-
-        .regButton {
+       .regButton {
             background: #fff;
             border: 1px solid #ccc;
             border-radius: 3px;
             padding: 6px 24px;
             cursor: pointer;
-            margin: 5px auto;
+            margin: 15px auto;
             margin-top: 5px;
             background-color: darkgray;
-
-
+            
         }
 
         .regButton:hover {
             background: #ccc;
         }
-
         #window {
-            width: 350px;
+            width: 350px; 
             height: 530px;
             background: #fff;
             border: 1px solid #fff;
             border-radius: 15px;
-            z-index: 2;
+            z-index:2;
             position: fixed;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
-            margin: 40px auto;
-            /*зовнішній відступ*/
+            margin: 40px auto; /*зовнішній відступ*/
             transition: opacity 1s 0.2s;
             opacity: 0;
-            display: none;
         }
-
         .close {
-            display: inline-block;
+            display:inline-block;
             margin: 10px 0 0 320px;
             cursor: pointer;
             background: #fff;
@@ -285,77 +267,86 @@
         .radio {
             margin-left: 10px;
         }
-
-        h6 {
-            
-            color: darkgray;
-            margin-right: 100px;
+        h6{
+            margin-right: 40px;
         }
-       
     </style>
 
-    <link rel="shortcut icon" href="ico1.png" type="image/x-icon">
+<link rel="shortcut icon" href="ico1.png" type="image/x-icon">
 </head>
 <!-- https://icons8.com/cssload/ru/spinners/5 -->
-
 <body>
-    <div class="my-preloder">
-        <div class="spinner-border">
-            <span class="visually-hidden"></span>
-        </div>
-        <div class="spinner-grow">
-            <span class="visually-hidden"></span>
-        </div>
-    </div>
-
-    <div class="header d-flex justify-content-between align-items-center">
-        <div class="authors ms-6 " >
-            <a class="iconae" href="" class="navbar-brand"><img src="ico1.png" alt=""></a>  <h6>+380676450239(Денис)</h6>
-            <h6> +380962819424(Артем)</h6>
-            
-        </div>
-        <div class="wrap-reg-form">
-            <button class="regButton me-3">Регистрация</button>
-            <div id='window'>
-                <div class="close">
-                    <i class="far fa-window-close"></i>
-                    <!--хрестик з фонт авейсом-->
-                </div>
-                <div class="form">
-                    <h2>Регистрация</h2>
-                    <form action="index.html" name="f1">
-                        <input type="text" required placeholder="Имя" name="name1" class="input">
-                        <input type="text" required placeholder="Фамилия" name="name2" class="input">
-                        <input type="email" required placeholder="E-mail" name="email1" class="input">
-                        <input type="email" required placeholder="Подтвердите e-mail" name="email2" class="input">
-                        <input type="password" required placeholder="Пароль" name="pass1" class="input">
-                        <input type="password" required placeholder="Подтвердите пароль" name="pass2" class="input">
-                        <input type='tel' required placeholder="Номер телефона" name="tel" class="input">
-                        <input type="radio" required name="radio1"> Мужчина
-                        <input type="radio" name="radio1" class="radio"> Женщина
-                        <input type="submit" value="Реєстрація" name="sab" class="input">
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <div class="" id="film-app">
+        <div class="my-preloder" v-if="showPr">
+            <div class="spinner-border" >
+                <span class="visually-hidden"></span>
+              </div>
+              <div class="spinner-grow" >
+                <span class="visually-hidden"></span>
+              </div>
+        </div>
 
 
-
-        <div class="container">
-
-
+        <div class="container" v-if="!showPr">
+            <h2>lol</h2>
+            <h5>lol</h5>
             <h1 class="text-center"><strong>MegaPC</strong></h1>
             <h2 class="text-center "><b>Комп'ютеры на любой вкус</b></h2>
             <div class="search">
                 <i class="fas fa-search me-3"></i>
                 <input type="text" placeholder="Поиск" v-model="searchString">
-
+                
             </div>
             <ul class="film-list">
                 <li class="list-item" v-for="(item, index) in myFilter">
+                    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!--початок панелі навігації-->
+                        <div class="container-fluid">
+                        <a  class="iconae" href="" class="navbar-brand"><img src="ico1.png" alt=""></a>
+                       <h6>+380676450239(Денис)
+            
+                       </h6>
+                       <h6> +380962819424(Артем)</h6>
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav"                 
+                        aria-expanded="false" aria-label="Toggle navigation"><!-- кнопка "бургер", куди згортається меню -->
+                            <span class="navbar-toggler-icon"></span> <!--Іконта кнопки, три горизонтальні полоски-->
+                        </button> <!--кінець кнопки-->
+                        
+                        
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> <!--початок блоку посилань-->
+                            <ul class="navbar-nav"> <!--відкриття списку-->
+                                <li class="nav-item ">  <!--елемент списку, active додаємо, щоб підсвічувало на якій ми сторінці-->
+                                
+                                
+                                    <button class="regButton">Реєстрація</button>  
+                                    <div id='window'>
+                                        <div class="close" >
+                                            <i class="far fa-window-close"></i><!--хрестик з фонт авейсом-->
+                                        </div>
+                                        <div class="form">
+                                            <h2>Реєстрація</h2>
+                                            <form action="index.html" name="f1">
+                                                <input type="text" required placeholder="Ім'я" name="name1" class="input">
+                                                <input type="text" required placeholder="Прізвище" name="name2" class="input">
+                                                <input type="email" required placeholder="E-mail" name="email1" class="input">
+                                                <input type="email" required placeholder="Підтвердіть e-mail" name="email2" class="input">
+                                                <input type="password" required placeholder="Пароль" name="pass1" class="input">
+                                                <input type="password" required placeholder="Підтвердіть пароль" name="pass2" class="input">
+                                                <input type='tel' required placeholder="Мобільний телефон" name="tel" class="input">
+                                                <input type="radio" required name="radio1"> Чоловік
+                                                <input type="radio" name="radio1" class="radio"> Жінка
+                                                <input type="submit" value="Реєстрація" name="sab" class="input">
+                                            </form>
+                                        </div>
+                                    </div>    
+                                  
+                              
+                            
+                
+                            </ul> <!--кінець списку-->
+                        </div> <!--кінець блоку зі списком--></div>
+                    </nav> <!--кінець панелі навігації-->
                     <div class="rel">
                         <div class="card" v-on:mouseenter="modalShow(index)" v-on:mouseleave="modalHide"
                             v-bind:class="{'active-card': currentIndex == index}"
@@ -368,7 +359,7 @@
                                 <p class="card-text"> Цена {{item.duration}}</p>
                                 <p class="card-text"> {{item.marks}}</p>
 
-
+                                
 
                                 <div class="about" v-if="currentIndex == index">
                                     <button href="#" class="btn btn-primary"
@@ -376,7 +367,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                    </div>
 
                     </div>
                     <!-- спливаюче вікно -->
@@ -389,7 +380,7 @@
                             <div class="my-modal-body">
                                 <p class="card-text">Ціна: {{item.duration}}</p>
                                 <p class="card-text"> {{item.marks}}</p>
-
+                                
                                 <p>{{item.about}}</p>
                                 <p>{{item.videocard}}</p>
                                 <p>{{item.processor}}</p>
@@ -397,16 +388,16 @@
                                 <p>{{item.opera}}</p>
                             </div>
                             <div class="my-modal-footer">
-
+                                
                             </div>
                         </div>
                     </div>
                 </li>
-
+                               
             </ul>
         </div>
     </div>
-
+    
     <!-- Бутстрап -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
@@ -415,9 +406,7 @@
     <script src="https://unpkg.com/vue@next"></script>
     <!-- Мій файл-->
     <script src="script.js"></script>
-<footer>
-   <h3 ><b>Сайт робили Черненко Денис та Панченко Артем</b> </h3>
-</footer>
+    
 </body>
 
 </html>

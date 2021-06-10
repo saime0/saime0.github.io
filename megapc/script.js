@@ -13,7 +13,7 @@ let films = [
     },
     {
         name: 'HYPERPC DYNAMIC', 
-        duration: "270 000", 
+        duration: "270 000 грн", 
 
         actors:"Іван, Степан, Павло, Катя", 
         image:"dynamic.png",
@@ -37,7 +37,7 @@ let films = [
     
     {
         name: 'HYPERPC CYBER PLATINUM', 
-        duration: "330 000", 
+        duration: "330 000 грн", 
 
         actors:"Іван, Степан, Павло, Катя", 
         image:"cyber.png",
@@ -86,7 +86,7 @@ let films = [
     
     {
         name: 'HYPERPC PLAY v2', 
-        duration: "95 000", 
+        duration: "95 000 грн", 
 
         actors:"Іван, Степан, Павло, Катя", 
         image:"play.png",
@@ -99,7 +99,7 @@ let films = [
 
  {
         name: 'MSI Creator 17 Extrem', 
-        duration: "120 000", 
+        duration: "120 000 грн", 
 
         actors:"Іван, Степан, Павло, Катя", 
         image:"msi1.png",
@@ -111,7 +111,7 @@ let films = [
     },
 {
         name: 'MSI GS66 Stealth Optimal', 
-        duration: "110 000", 
+        duration: "110 000 грн", 
 
         actors:"Іван, Степан, Павло, Катя", 
         image:"msi2.png",
@@ -123,7 +123,7 @@ let films = [
     },
 {
         name: 'Acer Predator Helios 300 ', 
-        duration: "100 000", 
+        duration: "100 000 грн", 
 
         actors:"Іван, Степан, Павло, Катя", 
         image:"predator300.png",
@@ -136,7 +136,7 @@ let films = [
 
 {
         name: 'Acer Predator Helios 700 ', 
-        duration: "100 000", 
+        duration: "100 000 грн", 
 
         actors:"Іван, Степан, Павло, Катя", 
         image:"predator700.png",
